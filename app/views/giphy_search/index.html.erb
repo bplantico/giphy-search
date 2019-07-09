@@ -1,0 +1,9 @@
+<!-- app/views/giphy_search.html.erb -->
+
+<% @gifs_array.map do |gif| %>
+  <ul>
+    <li class='gif_id'><%= gif.gif_id %></li>
+    <li class='gif_url'><%= gif.gif_url %></li>
+    <img src="<%= gif.gif %>" class="gif">
+  </ul>
+<% end %>
